@@ -1,0 +1,12 @@
+#!/bin/bash
+
+prefix="$1"
+start="$2"
+end="$3"
+
+eval "mkdir -p ${prefix}{$start..$end}"
+
+
+#!/bin/bash
+export dirs_to_create="$1\{$2..$3\}"
+seq -f "$
